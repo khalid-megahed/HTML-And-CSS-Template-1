@@ -1,0 +1,38 @@
+@media only screen and (max-width: 1050px) {
+    .back-ground-img{
+        display: none ;
+    }
+    .master{
+        width: 100% !important;
+        
+    }
+    .container{
+        overflow: hidden;
+        height: 100vh !important;
+    }
+}
+@media only screen and (max-width: 500px){
+   
+   .container{
+    overflow: hidden;
+    height: 100vh !important;
+   }
+   .master{
+   padding: 0 !important;
+    left: 0!important;
+    padding: 0;
+    margin: 0;
+   } 
+   header{
+    padding: 20px 0 20px 0;
+   }
+   .head{
+    padding: 30px 0 30px 0;
+   }
+   .input{
+    margin-top: 10px;
+   }
+   footer{
+    margin-bottom: 10px;
+   }
+}

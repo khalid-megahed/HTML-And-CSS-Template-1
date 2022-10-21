@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emitum</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <div class="container">
+        <div class="master">
+
+            <header>
+                <h1>emitum</h1>
+                <img src="/assent/imgs/flag.png" alt="">
+            </header>
+
+
+            <div class="section">
+                <form id="section1">
+                    <div class="head">
+                        <h2>Hallo there!</h2>
+                        <p>Sign in to continue.</p>
+                    </div>
+                    <div class="data">
+                       <div class="input">
+                        <label>Email<span>*</span></label>
+                        <input required type="email">
+                       </div>
+                       <div class="input">
+                        <div class="link">
+                            <label>Password<span>*</span></label>
+                          <a onclick="forgerPassword()" href="#">Forget password?</a>
+                        </div>
+                        <input required type="password">
+                       </div>
+                       <div class="rememberMe">
+                        <input id="checkbox" type="checkbox">
+                    <label >Remember Me</label>
+                       </div>
+
+                      <button class="login "type="submit">Log in <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+                    </div>
+                </form>
+
+
+
+
+                <form id="section2">
+                    <div class="head">
+                        <h3>Forget your password?</h3>
+                        <p>Just fill in your email and wl'll send you a link to reset your password. </p>
+                    </div>
+                    <div class="input">
+                        <label>Email</label>
+                        <input required type="email">
+                       </div>
+                       <div class="send">
+                        <button onclick="goBack()" class="goBack">Go Back</button>
+                        <button onclick="sendLink()" class="sendLink"> <i class="fa-regular fa-envelope"></i> Send Link</button>
+                       </div>
+                </form> 
+
+
+
+
+                <form id="section3">
+                    <div class="head">
+                        <h3>Reset your password</h3>
+                        <p>Enter the verification code that was sent to your email.</p>
+                    </div>
+                    <div class="input">
+                        <label>verification code</label>
+                        <input type="text">
+                    </div>
+                    <div class="send">
+                        <button onclick="cancel()" class="goBack">cancel </button>
+                        <button class="sendLink"><i class="fa-regular fa-circle-check"></i> confirm</button>
+                       </div>
+                </form>
+            </div>
+
+            <footer>
+                <p>Mode With <i class="fa-solid fa-heart"></i> by GAMP</p>
+                <div class="vertion">
+                    <p>ALL rights resaeved GAMP 2022<i class="fa-regular fa-copyright"></i></p>
+                    <p>vertion 1.0</p>
+                </div>
+            </footer>
+          
+        </div>
+        
+
+
+
+
+
+
+        <div class="back-ground-img"></div>
+     </div>
+
+     <script src="/js/main.js"></script>
+</body>
+</html>
